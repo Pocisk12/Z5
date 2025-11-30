@@ -7,7 +7,7 @@
                 
             function pole_wla() {
                 let a_wla = parseFloat(document.getElementById("dlugosc").value);
-                let b_wla = a_wla*a_now;
+                let b_wla = a_wla*a_wla;
                 document.getElementById("nazwa").innerHTML = `Pole kwadratu=${b_wla.toFixed(2)} cm^2`;
             }
 
@@ -29,4 +29,5 @@
         
         <div style="color: red; font-size: 50px;" id="nazwa"></div>
     </body>
+
 </html>
