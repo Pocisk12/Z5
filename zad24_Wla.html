@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const imie = "Nikodem";
+
+            let x1_wla = parseFloat(prompt("podaj x1"));
+            let x2_wla = parseFloat(prompt("podaj x2"));
+
+            document.write(`x1=${x1_wla}&nbsp&nbsp&nbsp&nbsp&nbspx2=${x2_wla}<br>`);
+            document.write(`x1=${x1_wla}&nbsp&nbsp&nbsp&nbsp&nbspx1=${((x1_wla * Math.PI) / 180).toFixed(2)}<br>`)
+
+            let y1 = 3 * Math.pow(x1_wla, imie.length / (imie.length + 2));
+            
+            let rad_x1_wla = (x1_wla * Math.PI) / 180;
+
+            let y2 = 2 * Math.cos(rad_x1_wla) + 3 * Math.sin(rad_x1_wla);
+            let y3 = Math.pow(Math.pow(x1_wla, 5) + (2 * Math.pow(x2_wla, 4)), 1/3) * Math.abs(x1_wla - x2_wla);
+
+            document.write(`y1=${y1.toFixed(2)}<br>`);
+            document.write(`y2=${y2.toFixed(2)}<br>`);
+            document.write(`y3=${y3.toFixed(2)}<br>`);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Pole_wlazlo(a_wla, b_wla) {
+                let w = parseFloat(a_wla) * parseFloat(b_wla);
+                document.getElementsByName("pole")[0].value = `${w.toFixed(2).toString()} cm`;
+                document.getElementsByName("wyprowadz_pole_wla")[0].innerHTML = `Pole = ${w.toFixed(2).toString()} cm`;
+            }
+
+            function obwod_wlazlo(a_wla, b_wla) {
+                let w = (parseFloat(a_wla)*2) + (parseFloat(b_wla)*2);
+                document.getElementsByName("obw")[0].value = `${w.toFixed(2).toString()} cm^2`;
+                document.getElementsByName("wyprowadz_obwod_wla")[0].innerHTML = `Obwód = ${w.toFixed(2).toString()} cm^2`;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formularz" action="..." onsubmit="Pole_wlazlo(this.a_dana_wla.value, this.b_dana_wla.value); obwod_wla(this.a_dana_wla.value, this.b_dana_wla.value); return false;">   
+            Podaj A= 
+                <input  size="6"  name="a_dana_wla"> 
+            Podaj B= 
+                <input  size="6"  name="b_dana_wla"> 
+                            <br>   <br> 
+                <input  TYPE="submit"  Value="oblicz" > 
+                            <br>   <br> 
+            Pole= 
+                <input  size="6"  name="pole"> 
+            Obwód= 
+                <input  size="6"  name="obw"> 
+        </form> 
+        <br>
+        <table>
+            <tr name="wyprowadz_pole_wla"></tr>
+            <tr name="wyprowadz_obwod_wla"></tr>
+        </table><br>
+
+    </body>
+</html>
