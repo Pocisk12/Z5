@@ -1,50 +1,18 @@
 <html> 
     <head> 
         <title>Nikodem Wlazło 3K</title>
-        <script language="JavaScript"> 
-            function WinOpen_z1()
+        <script language="JavaScript">
+
+            function WinOpen(p, n, w, h, t, l)
             {
-                window.open("zad1_Wlaz.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=50,width=200,top=200,left=200"); 
+                window.open(p, n, "toolbar=no,directories=no,menubar=no,height=" + h + ",width=" + w + ",top=" + t + ",left=" + l)
             }
 
-            function WinOpen_z2()
-            {
-                window.open("Zad2_Wlaz.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=230,width=200,top=200,left=200"); 
-            }
-            
-            function WinOpen_z3()  
-            { 
-                window.open("Zad3_Wlaz.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200"); 
-            }
-
-            function WinOpen_z4()  
-            { 
-                window.open("Zad4_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
-             function WinOpen_z6()  
-            { 
-                window.open("Zad6_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
-             function WinOpen_z7()  
-            { 
-                window.open("Zad7_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
-             function WinOpen_z8()  
-            { 
-                window.open("Zad8_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
-             function WinOpen_z9()  
-            { 
-                window.open("Zad9_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
-             function WinOpen_z10()  
-            { 
-                window.open("Zad10_Wlaz.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=800,width=1000,top=10,left=400"); 
-            }
             function okno_zamknij()  
             { 
                 window.close() 
             } 
+
         </script>
         <style>
             #hhh {
@@ -54,27 +22,50 @@
         </style>
     </head> 
     <body>
-        <p id="hhh">Szkielet zalizceniowy JavaScript, Nikodem Wlazło 3K</p>
+        <p id="hhh">Szkielet zaliczeniowy JavaScript<br> wykonał Nikodem Wlazło 3K2</p>
         <form>
-            <input type="button_z1" name="zadanie1" value="zadanie1_Wlazło" onclick="WinOpen_z1()">
-            <input type="button_z2" name="zadanie2" value="zadanie2_Wlazło" onclick="WinOpen_z2()">
-            <input type="button_z3" name="zadanie3" value="zadanie3_Wlazło" onclick="WinOpen_z3()"> 
-            <input type="button_z4" name="zadanie4" value="zadanie4_Wlazło" onclick="WinOpen_z4()"> 
-            <input type="button_z6" name="zadanie6" value="zadanie6_Wlazło" onclick="WinOpen_z6()"> 
-            <input type="button_z7" name="zadanie7" value="zadanie7_Wlazło" onclick="WinOpen_z7()"> 
-            <input type="button_z8" name="zadanie8" value="zadanie8_Wlazło" onclick="WinOpen_z8()"> 
-            <input type="button_z9" name="zadanie9" value="zadanie9_Wlazło" onclick="WinOpen_z9()"> 
-            <input type="button_z10" name="zadanie10" value="zadanie10_Wlazło" onclick="WinOpen_z10()"> 
+            <button onclick="WinOpen('zadanie1_wlaz.html', 'okienko_z1', 210, 60, 200, 200)">zadanie1-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie2_wlaz.html', 'okienko_z2', 200, 230, 200, 200)">zadanie2-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie3_wlaz.html', 'okienko_z3', 160, 380, 200, 200)">zadanie3-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie4_wlaz.html', 'okienko_z4', 1000, 800, 10, 400)">zadanie4-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie5_wlaz.html', 'okienko_z5', 1000, 210, 600, 325)">zadanie5-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie7_wlaz.html', 'okienko_z7', 1000, 210, 600, 325)">zadanie7-Wlazlo</button> <br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie8_wlaz.html', 'okienko_z8', 1000, 210, 600, 325)">zadanie8-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie9_wlaz.html', 'okienko_z9', 1000, 210, 600, 325)">zadanie9-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie10_wlaz.html', 'okienko_z10', 1000, 210, 600, 325)">zadanie10-Wlazlo</button><br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie11_wla.html', 'okienko_z11', 1000, 210, 600, 325)">zadanie11-Wlazlo</button>
+            <button onclick="WinOpen('zadanie11_wla_kod.html', 'okienkoz11_kod', 1000, 600, 300, 325)">zadanie11-kod-Wlazlo</button>
+            <br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie13_wla.html', 'okienko_z13', 1000, 210, 600, 325)">zadanie13-Wlazlo</button>
+            <button onclick="WinOpen('zadanie13_wla_kod.html', 'okienkoz13_kod', 1000, 600, 300, 325)">zadanie13-kod-Wlazlo</button>
+            <br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie14_wla.html', 'okienko_z14', 1000, 210, 600, 325)">zadanie14-Wlazlo</button>
+            <button onclick="WinOpen('zadanie14_wla_kod.html', 'okienkoz14_kod', 1000, 600, 300, 325)">zadanie14-kod-Wlazlo</button>
+            <br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie15_wla.html', 'okienko_z15', 1000, 210, 600, 325)">zadanie15-Wlazlo</button>
+            <button onclick="WinOpen('zadanie15_wla_kod.html', 'okienkoz15_kod', 1000, 600, 300, 325)">zadanie15-kod-Wlazlo</button>
+            <br><br><br>
+            <hr size=4 width=50% align=LEFT color=red> 
+            <button onclick="WinOpen('zadanie16_wla.html', 'okienko_z16', 1000, 210, 600, 325)">zadanie16-Wlazlo</button>
+            <button onclick="WinOpen('zadanie16_wla_kod.html', 'okienkoz16_kod', 1000, 600, 300, 325)">zadanie16-kod-Wlazlo</button>
+            <br><br><br>
+
+            <br><br><br>
             <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
         </form> 
     </body> 
 
-</html> 
-
-
-
-
-
-
-
+</html>
 
