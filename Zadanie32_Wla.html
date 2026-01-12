@@ -1,0 +1,28 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function budynek_wlazlo(pietra_w,material_w,wysokosc_w)//początek konstruktora 
+  { 
+   this.pietra=pietra_w; 
+   this.material=material_w;  
+   this.wysokosc=wysokosc_w;   
+  }//koniec konstruktora 
+              budynek_wlazlo.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.pietra + ' ' + this.material + ' ' + this.wysokosc); 
+      }; 
+  var wiezowiec1 = new budynek_wlazlo("22 pięter,", "cegła,", "440m"); // nowy obiekt osoba1 
+  var wiezowiec2 = new budynek_wlazlo('38 pięter,', 'metal,', "760m"); 
+  wiezowiec1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  wiezowiec2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("pierwszy wiezowiec"+"   "+wiezowiec1.pietra+"   "+wiezowiec1.material+"   "+wiezowiec1.wysokosc); 
+     document.write("<br>"+"drugi wiezowiec"+"   "+wiezowiec2.pietra+"   "+wiezowiec2.material+"   "+wiezowiec2.wysokosc); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
