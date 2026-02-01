@@ -1,0 +1,67 @@
+<H1>1. W jaki sposób można określić właściwość danego obiektu (dwa sposoby wraz z przykładami)?</H1><br>
+Odpowiedź:<br>
+Właściwość obiektu w JavaScript można określić na dwa sposoby:<br><br>
+1) Notacja kropkowa:<br>
+let osoba = {};<br>
+osoba.imie = "Jan";<br><br>
+2) Notacja tablicowa:<br>
+let osoba2 = {};<br>
+osoba2["nazwisko"] = "Kowalski";<br><br>
+
+<H1>2. W jaki sposób można odwołać się do pól (właściwości) i metod?</H1><br>
+Odpowiedź:<br>
+Do pól i metod obiektu można odwołać się za pomocą notacji kropkowej oraz tablicowej:<br><br>
+console.log(osoba.imie);<br>
+osoba.przedstawSie();<br><br>
+console.log(osoba["imie"]);<br>
+osoba["przedstawSie"]();<br><br>
+
+<H1>3. Wymień cechy charakterystyczne konstruktora.</H1><br>
+Odpowiedź:<br>
+Konstruktor:<br>
+- jest wywoływany automatycznie podczas tworzenia obiektu<br>
+- służy do inicjalizacji pól obiektu<br>
+- ma tę samą nazwę co klasa lub funkcja konstruktora<br>
+- jest wywoływany przy użyciu słowa kluczowego new<br><br>
+
+<H1>4. Konstruowanie obiektu na podstawie przykładu – obiekt ma trzy pola oraz jedną metodę.</H1><br>
+let samochod = {<br>
+  marka: "Toyota",<br>
+  rok: 2020,<br>
+  kolor: "czerwony",<br>
+  jedz: function() {<br>
+    console.log("Samochód jedzie");<br>
+  }<br>
+};<br><br>
+
+<H1>5. Znaczenie słowa this. Jak oddzielamy pola oraz metody?</H1><br>
+Odpowiedź:<br>
+Słowo kluczowe this odnosi się do bieżącego obiektu, w którym zostało użyte.<br>
+Pola i metody oddzielamy za pomocą kropki.<br><br>
+let osoba3 = {<br>
+  imie: "Anna",<br>
+  przywitaj: function() {<br>
+    console.log("Cześć, jestem " + this.imie);<br>
+  }<br>
+};<br><br>
+
+<H1>6. Konstruktor w JavaScript na podstawie przykładu wraz z opisem.</H1><br>
+Odpowiedź:<br>
+Konstruktor to funkcja służąca do tworzenia obiektów oraz inicjalizacji ich pól.<br><br>
+function Osoba(imie, wiek) {<br>
+  this.imie = imie;<br>
+  this.wiek = wiek;<br>
+}<br><br>
+
+<H1>7. Znaczenie słowa kluczowego new wraz z przykładem.</H1><br>
+Odpowiedź:<br>
+Słowo kluczowe new służy do tworzenia nowego obiektu na podstawie konstruktora.<br><br>
+let osoba4 = new Osoba("Jan", 30);<br><br>
+
+<H1>8. Znaczenie słowa kluczowego prototype wraz z przykładem i opisem.</H1><br>
+Odpowiedź:<br>
+<b>Prototype umożliwia dodawanie metod i właściwości do wszystkich obiektów utworzonych przez dany konstruktor.</b><br>
+<b>Dzięki prototype metody są współdzielone, co pozwala oszczędzać pamięć.</b><br><br>
+Osoba.prototype.przedstawSie = function() {<br>
+  console.log("Mam na imię " + this.imie);<br>
+};<br>

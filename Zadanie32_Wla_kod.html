@@ -1,0 +1,36 @@
+<pre>
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;script type="text/javascript"&gt; 
+
+function budynek_wlazlo(pietra_w, material_w, wysokosc_w)
+{ 
+  this.pietra = pietra_w; 
+  this.material = material_w;  
+  this.wysokosc = wysokosc_w;   
+}
+
+budynek_wlazlo.prototype.wypisz = function ()
+{ 
+  alert(this.pietra + ' ' + this.material + ' ' + this.wysokosc); 
+}; 
+
+var wiezowiec1 = new budynek_wlazlo("22 pięter,", "cegła,", "440m"); 
+var wiezowiec2 = new budynek_wlazlo("38 pięter,", "metal,", "760m"); 
+
+wiezowiec1.wypisz(); 
+wiezowiec2.wypisz(); 
+
+document.write("dostęp do właściwości&lt;br&gt;"); 
+document.write("pierwszy wiezowiec " + wiezowiec1.pietra + " " + wiezowiec1.material + " " + wiezowiec1.wysokosc); 
+document.write("&lt;br&gt;drugi wiezowiec " + wiezowiec2.pietra + " " + wiezowiec2.material + " " + wiezowiec2.wysokosc); 
+
+&lt;/script&gt; 
+&lt;/head&gt; 
+
+&lt;body&gt; 
+&lt;br&gt; 
+programowanie obiektowe   
+&lt;/body&gt; 
+&lt;/html&gt;
+</pre>

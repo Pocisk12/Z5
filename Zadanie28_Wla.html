@@ -1,0 +1,84 @@
+<H1>1. Rodzaje filozofii programowania</H1>
+<br>
+Rodzaje paradygmatów programowania:<br>
+1) Programowanie strukturalne<br>
+2) Programowanie obiektowe<br>
+<br>
+<H1>2. Programowanie strukturalne – opis i założenia</H1>
+<br>
+Programowanie strukturalne to paradygmat programowania opierający się<br>
+na podziale kodu źródłowego na procedury oraz hierarchicznie ułożone bloki.<br>
+Wykorzystuje struktury kontrolne takie jak instrukcje wyboru i pętle.<br>
+Zwiększa czytelność kodu i ułatwia analizę programów.<br>
+Stanowi alternatywę dla tzw. „spaghetti code” wynikającego z użycia goto.<br>
+<br>
+Założenia programowania strukturalnego:<br>
+1. Każdy blok kodu ma jeden punkt wejścia (może mieć wiele punktów wyjścia)<br>
+2. Instrukcje wykonywane są w określonej kolejności<br>
+3. Stosowanie instrukcji warunkowych (if, if else)<br>
+4. Stosowanie pętli (for, while, do while)<br>
+5. Unikanie instrukcji skoku (goto)<br>
+6. Unikanie instrukcji break i continue<br>
+7. Funkcje i zmienne nie są ze sobą bezpośrednio powiązane<br>
+<br>
+<br>
+Przykład programowania strukturalnego<br>
+<br>
+let liczba1 = 10;<br>
+let liczba2 = 5;<br>
+<br>
+if (liczba1 > liczba2) {<br>
+  console.log("Liczba1 jest większa");<br>
+}<br>
+<br>
+for (let i = 0; i < 3; i++) {<br>
+  console.log(i);<br>
+}<br>
+<br>
+<H1>3. Programowanie obiektowe – definicja</H1>
+<br>
+Programowanie obiektowe (ang. Object-Oriented Programming – OOP)<br>
+to sposób programowania, w którym program jest zbiorem obiektów.<br>
+<br>
+Obiekt:<br>
+- posiada stan (pola, dane)<br>
+- posiada zachowanie (metody)<br>
+<br>
+Obiekty są tworzone na podstawie wcześniej zdefiniowanych klas<br>
+i komunikują się ze sobą w celu realizacji zadań programu.<br>
+<br>
+<br>
+Przykład programowania obiektowego<br><br>
+<br>
+class Okno { <br>
+  constructor(szerokosc, wysokosc) { <br>
+    this.szerokosc = szerokosc; <br> 
+    this.wysokosc = wysokosc;<br>
+  }<br>
+<br>
+  zmienRozmiar(nowaSzerokosc, nowaWysokosc) {<br>
+    this.szerokosc = nowaSzerokosc;<br>
+    this.wysokosc = nowaWysokosc;<br>
+  }<br>
+}<br>
+
+<H1>4. Dlaczego stosujemy programowanie obiektowe?</H1>
+
+1. Jest bardziej naturalne i zgodne z rzeczywistością<br>
+2. Pozwala odwzorować świat rzeczywisty w postaci obiektów<br>
+3. Umożliwia lepsze zarządzanie pamięcią – obiekty można usuwać<br>
+4. Ułatwia ponowne użycie kodu dzięki klasom<br>
+5. Dobrze zaprojektowane klasy mogą być używane przez innych programistów<br>
+
+
+<H1>5. Podstawowe pojęcia programowania obiektowego</H1>
+
+Klasa – opis (definicja) obiektu, zawiera pola i metody <br>
+Obiekt – instancja klasy, byt utworzony na jej podstawie<br>
+Właściwość – cecha obiektu (pole), np. kolor<br>
+Metoda – czynność wykonywana przez obiekt<br>
+Konstruktor – metoda wywoływana podczas tworzenia obiektu<br>
+Dziedziczenie – przejmowanie cech innej klasy<br>
+Hermetyzacja – ukrywanie wnętrza klasy przed światem zewnętrznym<br>
+Polimorfizm – możliwość różnego zachowania obiektu w zależności od kontekstu<br>
+

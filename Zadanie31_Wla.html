@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var Wiezowiec = {
+  Pietra: "30",
+  Ulica: "Nowatorska",
+  Wysokosc: "300m",
+  pokaz: function () {
+    return this.Pietra + " " + this.Ulica + " " + this.Wysokosc;
+  }
+}
+
+Wiezowiec.Miasto = "Warszawa";
+
+Wiezowiec.nazwa_obiekt_wlazlo = function () {
+  return "Miasto: " + this.Miasto;
+}
+
+document.write("Nazwa obiektu: Wiezowiec<br>");
+document.write("Nazwy pól: Pietra, Ulica, Wysokosc<br>");
+document.write("Nazwa metody: pokaz<br>");
+document.write("Nowe pole poza obiektem: Miasto<br>");
+document.write("Nowa metoda poza obiektem: nazwa_obiekt_wlazlo<br><br>");
+
+document.write("Wartości pól: " + Wiezowiec.pokaz() + "<br>");
+document.write(Wiezowiec.nazwa_obiekt_wlazlo());
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
