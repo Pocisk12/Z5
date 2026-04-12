@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 39 - Wlazło</title>
+</head>
+<body>
+
+    <h1 style="color: green;">MENU:</h1>
+    <h2 style="color: red;">1-CZERWONY</h2>
+    <h2 style="color: blue;">2-NIEBIESKI</h2>
+
+    <br>
+    <input type="button" value="Oblicz" onclick="fun_wla()" />
+
+    <script>
+        function fun_wla() {
+            var x_wla = prompt("Podaj liczbę (1 lub 2) lub nazwę koloru (czerwony lub niebieski):", "");
+
+            if (x_wla != null) {
+                
+                if (x_wla == "1" || x_wla.toLowerCase() == "czerwony") {
+                    document.write('<font size="7" color="red">wczytałeś kolor czerwony</font><br />');
+                } 
+                
+                else if (x_wla == "2" || x_wla.toLowerCase() == "niebieski") {
+                    document.write('<font size="1" color="blue">wczytałeś kolor niebieski</font><br />');
+                } 
+                
+                else {
+                    document.write("Nie rozpoznano wyboru.");
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- Wlazło Z39_JS -->

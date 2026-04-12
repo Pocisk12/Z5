@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<body>
+    <pre>
+&lt;!DOCTYPE html&gt;  
+&lt;html&gt;
+    &lt;body&gt; 
+        &lt;div style="color:red;font-size:50px;"&gt; 
+            Wlazło 3k&lt;br&gt;
+            &lt;script language="JavaScript"&gt;
+                var x_wla=parseFloat(prompt("podaj argument x=","")); 
+                document.write("czytany argument x="+x_wla.toFixed(2)+"&lt;br&gt;");     
+        
+                function f_wla(x) { 
+                    if (x &gt;= 2) return 9;
+                    if (x &gt; -2 && x &lt; 0) return Math.pow(x + 1, 2);
+                    if (x &gt;= 0 && x &lt; 2) return (x*x*x) + 1;
+                    if (x &lt;= -2) return 1;
+                } 
+        
+                document.write(`f(${x_wla.toFixed(2)})=${f_wla(x_wla)}`); 
+        
+            &lt;/script&gt; 
+        &lt;/div&gt; 
+    &lt;/body&gt; 
+&lt;/html&gt;  
+
+&lt;!-- Wlazło Z40_JS --&gt;
+    </pre>
+</body>
+</html>
