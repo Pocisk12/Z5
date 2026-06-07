@@ -1,0 +1,26 @@
+<pre><code>&lt;!DOCTYPE html&gt;   
+    &lt;head&gt;    
+        &lt;title&gt;Wlazlo &lt;/title&gt;    
+        &lt;meta charset="utf-8"&gt;   
+    &lt;/head&gt;  
+    &lt;body&gt; 
+        &lt;div style="color:red;font-size:50px;"&gt; 
+            &lt;script language="JavaScript"&gt; 
+            do { 
+                var liczba1=prompt("wysokość=",""); 
+                var h_wla=parseFloat(liczba1); 
+            } 
+            while ( h_wla&lt;=0); 
+            
+            do { 
+                var liczba1=prompt("podstawę=",""); 
+                var a_wla=parseFloat(liczba1); 
+            } 
+            while(!( a_wla&gt;0)); 
+            
+            var Pole=a_wla*h_wla/2; 
+            document.write("Pole="+Pole.toFixed(2)+" cm^2"+"&lt;br&gt;"); 
+            &lt;/script&gt; 
+        &lt;/div&gt; 
+    &lt;/body&gt; 
+&lt;/html&gt;</code></pre>
