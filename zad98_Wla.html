@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 98 Wlazlo</title>
+    <style>
+        
+        .naglowek-Wlazlo {
+            color: red;
+            font-size: 90px;
+            margin-bottom: 10px;
+        }
+        
+        .opisy-funkcji {
+            color: green;
+            font-family: monospace;
+            font-size: 30px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .data-dd { color: red; font-weight: bold; }
+        .data-mm { color: green; font-weight: bold; }
+        .data-yy { color: blue; font-weight: bold; }
+    </style>
+    <script>
+        function pushbutton() {
+            alert("Czesc !");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="naglowek-Wlazlo">Wlazlo</div>
+
+    <div class="opisy-funkcji">
+        dzis = new Date()--&gt; Aktualna data<br>
+        dzis = dzis.getHours()--&gt; pobiera aktualna godzine<br>
+        dzis = dzis.getMinutes()--&gt; pobiera aktualna minute<br>
+        dzis = dzis.getMonth()+1--&gt; pobiera aktualny miesiac i dodaje 1 (java liczy od 0)<br>
+        dzis = dzis.getDate()--&gt; pobiera aktualny dzien miesiaca<br>
+        dzis = dzis.getFullYear()--&gt; pobiera aktualny rok
+    </div>
+
+    <div>
+        Ostatnio zmodyfikowany: 
+        <script>
+            document.write(document.lastModified);
+        </script>
+    </div>
+
+    <form style="margin-top: 10px; margin-bottom: 10px;">
+        <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+    </form>
+
+    <div id="skrypt-daty">
+        <script>
+            var dzis = new Date();
+            
+            
+            var godziny = String(dzis.getHours()).padStart(2, '0');
+            var minuty = String(dzis.getMinutes()).padStart(2, '0');
+            
+            var dd = String(dzis.getDate()).padStart(2, '0');
+            var mm = String(dzis.getMonth() + 1).padStart(2, '0'); 
+            var yy = String(dzis.getFullYear()).slice(-2); 
+
+            
+            document.write("Aktualny czas : " + godziny + ":" + minuty + "<br>");
+            
+            
+            document.write("Aktualna data : ");
+            document.write("<span class='data-dd'>" + dd + "</span>:");
+            document.write("<span class='data-mm'>" + mm + "</span>:");
+            document.write("<span class='data-yy'>" + yy + "</span>");
+        </script>
+    </div>
+
+</body>
+</html>
