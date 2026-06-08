@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 82</title>
+    <style>
+        /* Styl dla nagłówka z nazwiskiem (wielkość ok. 1cm, kolor czerwony) */
+        .naglowek-nazwisko {
+            color: red;
+            font-size: 1cm;
+            margin-bottom: 10px;
+        }
+        /* Style dla zielonego bloku z opisami funkcji */
+        .opisy-funkcji {
+            color: green;
+            font-family: monospace;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        /* Style dla kolorowego formatowania daty DD:MM:YY */
+        .data-dd { color: red; font-weight: bold; }
+        .data-mm { color: green; font-weight: bold; }
+        .data-yy { color: blue; font-weight: bold; }
+    </style>
+    <script>
+        function pushbutton() {
+            alert("Czesc !");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="naglowek-nazwisko">Tutaj Twoje nazwisko np. Nowak</div>
+
+    <div class="opisy-funkcji">
+        dzis = new Date()--&gt; wpisz co oznacza ten zapis<br>
+        dzis = dzis.getHours()--&gt; wpisz co oznacza ten zapis<br>
+        dzis = dzis.getMinutes()--&gt; wpisz co oznacza ten zapis<br>
+        dzis = dzis.getMonth()+1--&gt; wpisz co oznacza ten zapis<br>
+        dzis = dzis.getDate()--&gt; wpisz co oznacza ten zapis<br>
+        dzis = dzis.getFullYear()--&gt; wpisz co oznacza ten zapis
+    </div>
+
+    <div>
+        Ostatnio zmodyfikowany: 
+        <script>
+            document.write(document.lastModified);
+        </script>
+    </div>
+
+    <form style="margin-top: 10px; margin-bottom: 10px;">
+        <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+    </form>
+
+    <div id="skrypt-daty">
+        <script>
+            var dzis = new Date();
+            
+            // Pobieranie składowych czasu i uzupełnianie zerem wiodącym (np. 09 zamiast 9)
+            var godziny = String(dzis.getHours()).padStart(2, '0');
+            var minuty = String(dzis.getMinutes()).padStart(2, '0');
+            
+            var dd = String(dzis.getDate()).padStart(2, '0');
+            var mm = String(dzis.getMonth() + 1).padStart(2, '0'); // +1 bo miesiące są od 0 do 11
+            var yy = String(dzis.getFullYear()).slice(-2); // Wyciągnięcie dwóch ostatnich cyfr roku
+
+            // Wyświetlenie aktualnego czasu
+            document.write("Aktualny czas : " + godziny + ":" + minuty + "<br>");
+            
+            // Wyświetlenie daty w formacie DD:MM:YY z odpowiednimi kolorami
+            document.write("Aktualna data : ");
+            document.write("<span class='data-dd'>" + dd + "</span>:");
+            document.write("<span class='data-mm'>" + mm + "</span>:");
+            document.write("<span class='data-yy'>" + yy + "</span>");
+        </script>
+    </div>
+
+</body>
+</html>
